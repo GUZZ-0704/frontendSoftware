@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Form, Button, Spinner, Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Login.css";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -28,7 +30,7 @@ const Login = () => {
         localStorage.setItem("authToken", token);
         setLoading(false);
         console.log("Usuario logueado con éxito", response.data);
-        
+
         //TODO: redirigir a alguna pagina
       })
       .catch((error) => {
@@ -38,6 +40,7 @@ const Login = () => {
       });
   };
 
+  //TODO: centrar botones o mejorar ui
   return (
     <Container className="mt-5">
       <Row className="justify-content-center">
@@ -85,6 +88,16 @@ const Login = () => {
                 )}
               </Button>
             </Form>
+
+            <div className="mt-3 d-flex justify-content-center">
+              <Button
+                variant="link"
+                onClick={() => navigate("/registro")}
+                className="btn-link"
+              >
+                Regístrate
+              </Button>
+            </div>
           </div>
         </Col>
       </Row>
