@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Form, Button, Spinner, Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Registro.css"; // Assuming custom styles for additional tweaks
+import "./Registro.css";
 
 const Registro = () => {
   const [nombre, setNombre] = useState("");
