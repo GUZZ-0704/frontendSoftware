@@ -1,0 +1,43 @@
+/* Fondo negro y texto blanco en toda la barra de navegación */
+.navbar-custom {
+    background-color: #000 !important; /* Fondo negro */
+    color: #fff !important;           /* Texto blanco */
+}
+
+/* Asegurar que los enlaces y dropdown items siempre sean blancos */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .dropdown-item {
+    color: #fff !important;          /* Color blanco en todos los enlaces */
+}
+
+/* Para asegurar que el color no cambie al pasar el mouse sobre los enlaces */
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-item.active .nav-link,
+.navbar-custom .dropdown-item:hover {
+    background-color: #000 !important; /* Fondo negro */
+    color: #fff !important;            /* Texto blanco */
+}
+
+/* Asegurar que el icono del toggle (hamburguesa) también sea blanco */
+.navbar-custom .navbar-toggler-icon {
+    background-color: #fff !important; /* Fondo blanco para el icono */
+}
+
+/* Evitar que el fondo del dropdown cambie a blanco */
+.navbar-custom .dropdown-menu {
+    background-color: #000 !important; /* Fondo negro para el menú desplegable */
+    color: #fff !important;            /* Texto blanco */
+}
+
+/* Asegurar que los items del dropdown se mantengan con fondo negro y texto blanco */
+.navbar-custom .dropdown-item {
+    background-color: #000 !important; /* Fondo negro */
+    color: #fff !important;            /* Texto blanco */
+}
+
+/* Cuando se hace hover sobre el dropdown y los enlaces, mantén todo negro */
+.navbar-custom .dropdown-item:hover {
+    background-color: #000 !important; /* Fondo negro */
+    color: #fff !important;            /* Texto blanco */
+}

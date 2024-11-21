@@ -27,10 +27,14 @@ const Login = () => {
       .then((response) => {
         // Se guarda el token
         const token = response.data.token;
+        const id = response.data.id;
         localStorage.setItem("authToken", token);
+        console.log("Token guardado", token);
+        localStorage.setItem("id", id);
+        console.log("Id guardado", id);
         setLoading(false);
         console.log("Usuario logueado con éxito", response.data);
-
+        navigate("/home")
         //TODO: redirigir a alguna pagina
       })
       .catch((error) => {
