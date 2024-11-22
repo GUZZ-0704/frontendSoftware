@@ -1,0 +1,40 @@
+.login-form {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-weight: bold;
+  }
+  
+  .input-style {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .input-style:focus {
+    border-color: #3B4CCA;
+    box-shadow: 0 0 0 0.25rem rgba(59, 76, 202, 0.25);
+  }
+  
+  button {
+    background-color: #3B4CCA;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+  button:hover {
+    background-color: #2a3d92;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .alert {
+    margin-bottom: 1rem;
+  }
+  
