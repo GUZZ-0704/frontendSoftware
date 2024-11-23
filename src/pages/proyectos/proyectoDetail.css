@@ -1,0 +1,426 @@
+.container-project-detail {
+    padding: 40px;
+    background-color: #f6f4f2;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.back-button {
+    background-color: #3e5c76;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.back-button:hover {
+    background-color: #121b3c;
+}
+
+.section-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    font-size: 1.6rem;
+    color: #1a1d27;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.empty-users-alert {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-item:hover {
+    background-color: #e9ecef;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.user-name {
+    font-weight: 600;
+    color: #343a40;
+    margin-right: 5px;
+}
+
+.user-email {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.user-delete-button {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.user-delete-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+
+.empty-tasks-alert {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.task-card {
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #343a40;
+    text-transform: capitalize;
+    margin: 0;
+}
+/******/
+.task-status-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.status-pending {
+    background-color: #cbd8e8;
+    color: #3e5c76;
+}
+
+.status-completed {
+    background-color: #1a1d27;
+    color: #eaeff4;
+}
+
+.task-status-pill:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/****/
+
+.task-description {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 10px 0;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.task-action-button {
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-button {
+    background-color: #1a1d27;
+    color: #ffffff;
+    border: none;
+    height  : 40px;
+    width: 90px;
+}
+
+.edit-button:hover {
+    background-color: #cbd8e8;
+    transform: scale(1.05);
+    color: #1a1d27;
+}
+
+.delete-button {
+    background-color: #1a1d27;
+    color: #ffffff;
+    height: 40px;
+    border: none;
+}
+
+.delete-button:hover {
+    background-color: #cbd8e8;
+    color: #1a1d27;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+.content-wrapper-project-detail{
+    display: flex;
+    margin-top: 70px;
+}
+
+.content-wrapper-proyect-detail{
+    display: flex;
+    margin-top: 70px;
+}
+.content-area{
+        margin-left: 260px;
+    margin-top: 9px;
+    background-color: #cbd8e8;
+    border-radius: 20px 0 0 0;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.project-card {
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(145deg, #ffffff, #f1f1f1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #1a1d27;
+    margin-bottom: 10px;
+}
+
+.project-card .card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.project-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #3e5c76;
+    margin: 0 0 20px 0;
+}
+
+.custom-button {
+    background-color: #1a1d27;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #2f354b;
+    color: #ffffff;
+    border: none;
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button-secondary {
+    background-color: transparent;
+    color: #1a1d27;
+    border: none;
+    background-color:#cbd8e8 ;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.custom-button-secondary:hover {
+    background-color: #cbd8e8;
+    color: #1a1d27;
+    border: none;
+    transform: translateY(-2px);
+}
+.card-header-detalle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.estado-proyecto{
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #cbd8e8;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #1a1d27;
+    font-weight: 600;
+
+}
+
+
+.inventory-alert {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #f4eeee;
+    border-radius: 10px;
+    padding: 15px;
+    color: #3e5c76;
+    border: 1px solid #e0dede;
+}
+
+.inventory-list {
+    margin-top: 15px;
+    padding: 0;
+}
+
+.inventory-item {
+    display: flex;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.inventory-item:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+.inventory-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.inventory-details {
+    flex-grow: 1;
+}
+
+.inventory-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3e5c76;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.inventory-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.inventory-meta {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.inventory-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    
+}
+.custom-button.edit-inventory{
+    width: 100%;
+
+}
+

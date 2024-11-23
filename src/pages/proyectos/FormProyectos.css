@@ -1,0 +1,76 @@
+.form-container {
+    padding: 40px;
+    background-color: #f6f4f2;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.form-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #121b3c;
+    margin-bottom: 20px;
+}
+
+.project-form {
+    font-family: "Poppins", sans-serif;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #3e5c76;
+    font-size: 1rem;
+}
+
+.form-input {
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    color: #1a1d27;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.form-input:focus {
+    box-shadow: 0px 0px 5px rgba(62, 92, 118, 0.3);
+}
+
+.form-actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.custom-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #1a1d27;
+    color: #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #303546;
+    color: #ffffff;
+}
+
+.custom-button-secondary {
+    background-color: transparent;
+    color: #1a1d27;
+    border: none;
+    background-color:#cbd8e8 ;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.custom-button-secondary:hover {
+    background-color: #303546;
+    color: #E0E1DD;
+}

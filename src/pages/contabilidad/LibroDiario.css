@@ -1,0 +1,317 @@
+.libro-diario-container {
+    padding: 40px;
+    background-color: #f6f4f2;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.libro-diario-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #121b3c;
+    margin-bottom: 20px;
+}
+
+.filters-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-label {
+    font-weight: 600;
+    color: #3e5c76;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.filter-select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+.libro-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.custom-button-libro {
+    background-color: #cbd8e8;
+    color: #1a1d27;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.custom-button-danger {
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+/* Transacción Card */
+/* Transacción Card */
+.transaccion-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+}
+
+/* Header de Transacción */
+.transaccion-header {
+    background-color: #1a1d27; /* Fondo del encabezado */
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaccion-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.transaccion-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Detalles de Transacción */
+.transaccion-detalle {
+    background-color: #f9f9f9; /* Fondo de la sección de detalles */
+    padding: 20px;
+    border: none;
+    border-radius: 12px; /* Bordes redondeados en la sección */
+}
+
+/* Tabla con bordes redondeados */
+.transacciones-table {
+    width: 100%;
+    border-collapse: separate; /* Permite bordes redondeados */
+    border-spacing: 0; /* Elimina espacios entre celdas */
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Bordes exteriores */
+    border-radius: 12px; /* Bordes redondeados generales */
+    overflow: hidden; /* Evita que el contenido salga de los bordes */
+}
+
+.transacciones-table thead {
+    background-color: #1a1d27;
+    color: #ffffff;
+    border-radius: 12px 12px 0 0; /* Redondeo solo en las esquinas superiores */
+}
+
+
+.transacciones-table td {
+    padding: 10px;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #ddd; /* Bordes internos */
+}
+
+.transacciones-table th {
+    padding: 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #ddd; /* Bordes internos */
+}
+.transacciones-table tbody tr {
+    transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+}
+
+.transacciones-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Alerta */
+.alert {
+    padding: 15px;
+    background-color: #eaf4ff;
+    border-radius: 8px;
+    color: #3178c6;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.acciones-libro{
+    display: flex;
+    gap: 10px;
+}
+
+.custom-button {
+    background-color: #1a1d27;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.custom-button-danger {
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+
+/*libro card header*/
+.libro-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.libro-card-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #121b3c;
+    margin: 0;
+}
+
+.libro-card-actions {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+/*modalcito*/
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-wrapper {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #121b3c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #3e5c76;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.custom-button {
+    background-color: #1a1d27;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.custom-button-secondary {
+    background-color: transparent;
+    color: #1a1d27;
+    border: none;
+    background-color:#cbd8e8 ;
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.custom-button-secondary:hover {
+    background-color: #303546;
+    color: #E0E1DD;
+}
+
+
+.libro-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.libro-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #121b3c;
+}
+
+.libro-card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.libro-description {
+    font-size: 1rem;
+    color: #495057;
+    margin-top: 10px;
+}

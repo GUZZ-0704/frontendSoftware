@@ -1,15 +1,29 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Registro from "./Registro.jsx";
-import Login from "./login.jsx";
-import HomePage from "./Home.jsx";
-import ListaProyectos from "./proyectos/ListaProyectos.jsx";
-import DetalleProyecto from "./proyectos/ProyectoDetail.jsx";
-import ListaMisProyectos from "./proyectos/editProyectosList.jsx";
-import FormProyectos from "./proyectos/formProyectos.jsx";
+import Login from './pages/autenticacion/Login';
+import Registro from './pages/autenticacion/Registro';
+import HomePage from './Home';
+import ListaProyectos from './pages/proyectos/ListaProyectos';
+
+import EditProyectosList from './pages/proyectos/editProyectosList';
+import FormProyectos from './pages/proyectos/formProyectos';
+import ProyectoDetail from './pages/proyectos/ProyectoDetail';
+import './index.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import PlanDeCuentas from './pages/contabilidad/PlanDeCuentas';
+import BalanceComprobacion from './pages/contabilidad/BalanceComprobacion';
+import LibroDiario from './pages/contabilidad/LibroDiario';
+import BalanceGeneral from './pages/contabilidad/BalanceGeneral';
+import FlujoEfectivo from './pages/contabilidad/FlujoEfectivo';
+import EstadoResultados from './pages/contabilidad/EstadoResultado';
+
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element:<HomePage />,
+  },
   {
     path: "/registro",
     element: <Registro />,
@@ -23,16 +37,16 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/MisProyectos",
+    path: "/misProyectos",
     element: <ListaProyectos />,  
   },
   {
     path: "/proyecto/:id",
-    element: <DetalleProyecto />,
+    element: <ProyectoDetail />,
   },
   {
-    path: "/EditMisProyectos",
-    element: <ListaMisProyectos />,
+    path: "/editMisProyectos",
+    element: <EditProyectosList />,
   },
   {
     path: "/proyecto/formulario",
@@ -41,6 +55,35 @@ const router = createBrowserRouter([
   {
     path: "/proyecto/formulario/:id",
     element: <FormProyectos />,
+  },
+  {
+    path: "/cuenta",
+    element: <PlanDeCuentas />,
+  },
+  {
+    path: "/balanceComprobacion",
+    element:<BalanceComprobacion />,
+  },
+  {
+    path: "/libroDiario",
+    element: <LibroDiario />,
+  },
+  {
+    path: "/balanceGeneral",
+    element: <BalanceGeneral />,
+  },
+  {
+    path: "/flujoEfectivo",
+    element: <FlujoEfectivo />,
+  },
+  {
+    path: "/estadoResultado",
+    element: <EstadoResultados />,
+
+  },
+  {
+    path: "/home",
+    element:<HomePage />,
   }
 ]);
 
