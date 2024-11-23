@@ -3,8 +3,10 @@ import axios from "axios";
 import { Form, Button, Spinner, Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Registro.css";
+import { useNavigate } from "react-router-dom";
 
 const Registro = () => {
+  const navigate = useNavigate();
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -39,7 +41,9 @@ const Registro = () => {
       .post("http://localhost:3000/usuarios/register", userData)
       .then((response) => {
         console.log("Usuario registrado con éxito", response.data);
+        navigate("/login");
       })
+
       .catch((error) => {
         console.error("Error al registrar el usuario", error);
       });
